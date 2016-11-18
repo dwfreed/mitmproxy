@@ -5,13 +5,13 @@ from mitmproxy.utils import debug
 
 def test_dump_info():
     cs = io.StringIO()
-    debug.dump_info(None, None, file=cs, testing=True)
+    debug.dump_info(None, None, file=cs)
     assert cs.getvalue()
 
 
 def test_dump_stacks():
     cs = io.StringIO()
-    debug.dump_stacks(None, None, file=cs, testing=True)
+    debug.dump_stacks(None, None, file=cs)
     assert cs.getvalue()
 
 
